@@ -108,7 +108,9 @@ y = x++ + 2;  // y is assigned 8: evaluate x + 2 first (8), then increment x
 (dN-1 × 2^N-1)+(dN-2 × 2^N-2)+ … +(d2 × 2^2)+(d1 × 2^1)+(d0 × 2^0)
 ```
 - 16进制： A for 10, B for 11, up to F for 15
-- 
+```
+(dN-1 × 16^N-1)+(dN-2 × 16^N-2)+ … +(d2 × 16^2)+(d1 × 16^1)+(d0 × 16^0)
+```
 
 
 
