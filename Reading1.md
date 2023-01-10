@@ -33,5 +33,47 @@ Difference between python and C:
 - In C, each statement ends with a semicolon`;`. In C, statements must be within the body of some function (in `main` in this example).
 - In C, the `printf` function prints a formatted string. Values for the placeholders in the format string are additional arguments separated by commas (for example, the value of sqrt(4) will be printed in place of the `%f` placeholder in the format string).
 - C’s `printf` function doesn’t automatically print a newline character at the end like Python’s print function does. As a result, C programmers need to explicitly specify a newline character (`\n`) in the format string when a newline is desired in the output.
+
+The `main` function:
+- must have a function named `main` and must have return type `int`
+- explicit `return` to return an `int` value
+- `main` function is automatically called when the C program executes.
+
+1.1.1
+- A C compiler is a program that translates C source code into a binary executable form
+- GCC -- GUN C Compiler
+```
+$ gcc hello.c
+$ ./a.out
+```
+- First compile to a.out, then direct excution of a.out
+
+Steps for editing, compiling, and running a C program on a Unix system:
+1) Using a text editor (for example, vim), write and save your C source code program in a file (e.g., hello.c):
+`$ vim hello.c`
+2) Compile the source to an executable form, and then run it. The most basic syntax for compiling with `gcc` is:
+`$ gcc <input_source_file>`
+3) The compiler creates a binary executable file named `a.out`.
+The compiler also allows you to specify the name of the binary executable file to generate using the -o flag:
+`$ gcc -o <output_executable_file> <input_source_file>`
+
+1.1.2
+- To declared a variable:
+`type_name variable_name;`
+- basic C types: `char`, `int`, `float`, and `double`
+```
+char letter;
+letter = 'A';        // a single quote is used for single character value
+letter = letter + 1; // letter stores 'B' (ASCII value one more than 'A')
+```
+
+1.1.3
+- the `float` and `double` types can represent real values
+- `int` represents signed integer values
+- unsigned `int` represents unsigned integer values.
+
+
+
+
  
  
