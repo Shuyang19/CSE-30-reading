@@ -1,4 +1,4 @@
-# reading 1
+# Reading 1
 - C program is expressed as a sequence of statements (steps)
 - C programs are structured as a set of functions (procedures)
 - Must have the main function
@@ -71,7 +71,25 @@ letter = letter + 1; // letter stores 'B' (ASCII value one more than 'A')
 - the `float` and `double` types can represent real values
 - `int` represents signed integer values
 - unsigned `int` represents unsigned integer values.
+```
+int x;           // x is a signed int variable
+unsigned int y;  // y is an unsigned int variable
+```
+- signed: positive, negative, 0
+- unsigned: non-negative
+- minimum(common) size
+[!Image](1.1.pic.jpg)
 
+
+-The `sizeof` operator evaluates to an unsigned long value, so in the call to printf, use the placeholder `%lu` to print its value.
+
+```
+x = 6;
+y = ++x + 2;  // y is assigned 9: increment x first, then evaluate x + 2 (9)
+
+x = 6;
+y = x++ + 2;  // y is assigned 8: evaluate x + 2 first (8), then increment x
+```
 
 
 
