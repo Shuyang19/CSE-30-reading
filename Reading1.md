@@ -78,7 +78,7 @@ unsigned int y;  // y is an unsigned int variable
 - signed: positive, negative, 0
 - unsigned: non-negative
 - minimum(common) size
-[!Image](1.1.pic.jpg)
+![Image](1.1.pic.jpg)
 
 
 -The `sizeof` operator evaluates to an unsigned long value, so in the call to printf, use the placeholder `%lu` to print its value.
