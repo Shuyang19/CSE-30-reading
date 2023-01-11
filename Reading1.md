@@ -97,13 +97,7 @@ y = x++ + 2;  // y is assigned 8: evaluate x + 2 first (8), then increment x
 (dN-1 × 10^N-1)+(dN-2 × 10^N-2)+ … +(d2 × 10^2)+(d1 × 10^1)+(d0 × 10^0)
 ```
 - A binary number system uses a base of 2 instead of decimal’s 10
-- 10进制转2进制：商除2取余：
-``` 
-5/2 -- 2...1
-2/2 -- 1...0
-1/2 -- 0...1
-5 = 101
-```
+
 ```
 (dN-1 × 2^N-1)+(dN-2 × 2^N-2)+ … +(d2 × 2^2)+(d1 × 2^1)+(d0 × 2^0)
 ```
@@ -111,6 +105,19 @@ y = x++ + 2;  // y is assigned 8: evaluate x + 2 first (8), then increment x
 ```
 (dN-1 × 16^N-1)+(dN-2 × 16^N-2)+ … +(d2 × 16^2)+(d1 × 16^1)+(d0 × 16^0)
 ```
+## 4.2
+进制转换
+- 10进制转2进制：商除2取余：
+``` 
+5/2 -- 2...1
+2/2 -- 1...0
+1/2 -- 0...1
+5 = 101
+```
+
+## 4.3
+check the most significant bit, dN-1: if it’s 1, the value is negative; otherwise it isn’t.
+
 
 
 
